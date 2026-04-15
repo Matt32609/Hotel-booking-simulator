@@ -123,7 +123,7 @@ def check_out():
                 break
         
         if found_guest:
-            print(f"Booking Found: {found_guest['type']}")
+            print(f"Booking Found: {found_guest["type"]}")
             print("(1) Yes | (2) No")
             if int(input("Would you like to check out? ")) == 1:
                 all_bookings.remove(found_guest)
