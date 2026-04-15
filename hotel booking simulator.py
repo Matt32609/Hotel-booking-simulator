@@ -47,7 +47,7 @@ def check_in():
             print("(1) Yes | (2) No")
             confirmation = int(input(f"You have chosen {chosen_room}. Would you like to continue? Enter a digit either 1 or 2 to continue."))
             if confirmation == 1:
-                date_str = input("Please enter your check-out date (YYYY-MM-DD): ")
+                date_str = input("Please enter your check out date (YYYY-MM-DD): ")
                 check_in_date = datetime.datetime.now()
                 check_out_date = datetime.datetime.strptime(date_str, "%Y-%m-%d")  
                 
@@ -125,7 +125,7 @@ def check_out():
         if found_guest:
             print(f"Booking Found: {found_guest['type']}")
             print("(1) Yes | (2) No")
-            if int(input("Would you like to complete check-out? ")) == 1:
+            if int(input("Would you like to complete check out? ")) == 1:
                 all_bookings.remove(found_guest)
                 save_to_json(all_bookings)
                 print("We hope you enjoyed your stay! You are more than welcome to stay with us again.")
