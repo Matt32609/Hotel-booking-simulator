@@ -79,18 +79,25 @@ def payment(chosen_room, room_price, date_str, stay_duration):
     try:
         print(f"--- PAYMENT PAGE ---")
         total_cost = room_price * stay_duration
-        if chosen_room == "Standard Room":
-            room_number = random.randint(100, 299) 
-        elif chosen_room == "Superior Room":
-            room_number = random.randint(300, 499)  
-        elif chosen_room == "Deluxe Room":
-            room_number = random.randint(500, 699)  
-        elif chosen_room == "Executive Room":
-            room_number = random.randint(700, 899) 
-        elif chosen_room == "Penthouse":
-            room_number = random.randint(900, 980)  
-        else:
-            room_number = random.randint(100, 980)  
+        all_bookings = load_from_json()
+        taken_rooms = [guest["room_number"] for guest in all_bookings]
+        while True:
+            if chosen_room == "Standard Room":
+                room_number = random.randint(100, 299) 
+            elif chosen_room == "Superior Room":
+                room_number = random.randint(300, 499)  
+            elif chosen_room == "Deluxe Room":
+                room_number = random.randint(500, 699)  
+            elif chosen_room == "Executive Room":
+                room_number = random.randint(700, 899) 
+            elif chosen_room == "Penthouse":
+                room_number = random.randint(900, 980)  
+            else:
+                room_number = random.randint(100, 980) 
+
+            if room_number not in taken_rooms:
+                break
+                 
         print(f"Room: {chosen_room}")
         print(f"Night(s): {stay_duration}")
         print(f"Total Amount: RM{total_cost}")
