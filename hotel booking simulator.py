@@ -81,6 +81,22 @@ def payment(chosen_room, room_price, date_str, stay_duration):
         total_cost = room_price * stay_duration
         all_bookings = load_from_json()
         taken_rooms = [guest["room_number"] for guest in all_bookings]
+        current_bookings = [guest for guest in all_bookings if guest["type"] == chosen_room]
+        if chosen_room == "Standard Room" and len(current_bookings) >= 200:
+            print(f"Sorry, {chosen_room} is sold out!")
+            return menu_selection()
+        elif chosen_room == "Superior Room" and len(current_bookings) >= 200:
+            print(f"Sorry, {chosen_room} is sold out!")
+            return menu_selection()
+        elif chosen_room == "Deluxe Room" and len(current_bookings) >= 200:
+            print(f"Sorry, {chosen_room} is sold out!")
+            return menu_selection()
+        elif chosen_room == "Executive Room" and len(current_bookings) >= 200:
+            print(f"Sorry, {chosen_room} is sold out!")
+            return menu_selection()
+        elif chosen_room == "Penthouse" and len(current_bookings) >= 81:
+            print(f"Sorry, {chosen_room} is sold out!")
+            return menu_selection()
         while True:
             if chosen_room == "Standard Room":
                 room_number = random.randint(100, 299) 
