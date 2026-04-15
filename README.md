@@ -38,6 +38,7 @@ To run the simulator:
 
 --------------------------------------------
 Image demonstration of the simulator:
+
 <img width="562" height="338" alt="MINGW64__c_Users_Matthew Kam_Desktop_R 15_04_2026 13_55_59" src="https://github.com/user-attachments/assets/4757e443-f0b4-4bab-a44a-c3fd023443a2" />
 
 
