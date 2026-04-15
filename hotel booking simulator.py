@@ -125,7 +125,7 @@ def check_out():
         if found_guest:
             print(f"Booking Found: {found_guest['type']}")
             print("(1) Yes | (2) No")
-            if int(input("Would you like to complete check out? ")) == 1:
+            if int(input("Would you like to check out? ")) == 1:
                 all_bookings.remove(found_guest)
                 save_to_json(all_bookings)
                 print("We hope you enjoyed your stay! You are more than welcome to stay with us again.")
