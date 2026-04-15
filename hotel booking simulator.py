@@ -17,7 +17,7 @@ def save_to_json(data_list):
 
 def menu_selection():
     try:
-        print("(1) Check in | (2) Check out | (3) Exit | (4) Reset simulator ")
+        print("(1) Check-in | (2) Check-out | (3) Exit | (4) Reset simulator ")
         select = int(input("Hello. What would you like to do? Please enter a digit either 1, 2, 3 or 4 to continue,"))
         if select == 1:
             check_in()
