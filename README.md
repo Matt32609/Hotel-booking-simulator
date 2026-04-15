@@ -6,7 +6,7 @@ This simulator was developed to enhance my understanding in the usage of diction
 
 ---------------------------------------
 Key features of the code:
-
+--------------------------------------
 1. Dictionary-Driven Room Selection:
 - I implemented a dictionary to map user inputs to specific room attributes (Room Name and Nightly Rate). This approach replaces long if-else chains with a cleaner, more scalable lookup system that manages everything from Standard rooms to the Penthouse.
 
