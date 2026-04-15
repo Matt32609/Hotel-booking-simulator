@@ -2,7 +2,7 @@
 --------------------------------------
 A command-line interface (CLI) application built in Python that simulates a professional hotel front-desk system. The project focuses on managing the guest lifecycle—from room selection and automated billing to persistent record-keeping.
 
-This simulator was developed to enhance my understanding of using dictionaries, JSON concepts for saving user data, and functions. At the same time, this project also introduced me to the `random` and `datetime` modules to strengthen the realism of the simulator.
+This simulator was developed to enhance my understanding of dictionaries, JSON for persistent data storage, and the use of functions. At the same time, the project introduced me to the "random" and "datetime" modules, which helped make the simulator more realistic.
 
 ---------------------------------------
 Key features of the code:
