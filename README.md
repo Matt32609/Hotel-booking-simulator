@@ -14,13 +14,13 @@ Key features of the code:
 - Using Python’s "datetime" module, the program captures the current date and calculates the delta (difference) between check-in and check-out. This ensures the stay duration is calculated automatically, which then drives the total cost calculation without manual entry.
 
 3. Logical Room Number Allocation:
-To mirror a real-world hotel floor plan, I used "random.randint()" within specific ranges. I wrote logic to ensure room numbers are tier-aware, assigning lower numbers to Standard rooms and reserving the 900-series exclusively for Penthouses.
+- To mirror a real-world hotel floor plan, I used "random.randint()" within specific ranges. I wrote logic to ensure room numbers are tier-aware, assigning lower numbers to Standard rooms and reserving the 900-series exclusively for Penthouses.
 
 4. Persistent Data Storage via JSON:
-I implemented a JSON-based database system to ensure data persistence. By using "json.load()" and "json.dump()", the simulator maintains guest records even after the program is closed, moving the project beyond a simple volatile script to a persistent application.
+- I implemented a JSON-based database system to ensure data persistence. By using "json.load()" and "json.dump()", the simulator maintains guest records even after the program is closed, moving the project beyond a simple volatile script to a persistent application.
 
 5. Robust Input Validation & Error Trapping:
-To prevent system crashes, I wrapped user inputs in "try-except" blocks. This handles "ValueError" exceptions gracefully, such as when a user enters a string instead of an integer, and includes logical validation to ensure check-out dates cannot be set in the past.
+- To prevent system crashes, I wrapped user inputs in "try-except" blocks. This handles "ValueError" exceptions gracefully, such as when a user enters a string instead of an integer, and includes logical validation to ensure check-out dates cannot be set in the past.
   
 6. Dynamic Record Management:
 - The check-out system performs a targeted search through a list of dictionaries. Once a match is found, the program modifies the data structure in real time and updates the external JSON file, simulating a live database update.
