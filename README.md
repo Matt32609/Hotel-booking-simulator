@@ -22,10 +22,7 @@ Key features of the code:
 5. Robust Input Validation & Error Trapping:
 - To prevent system crashes, I wrapped user inputs in try-except blocks. This handles ValueErrors gracefully—such as when a user enters a string instead of an integer—and includes logical validation to ensure check-out dates cannot be set in the past.
   
-6. Recursive Navigation & State Control:
-- The program is designed with a circular navigation flow. By utilizing recursive function calls, I ensured that users could backtrack to the main menu at any point in the transaction without losing their session or breaking the program's execution loop.
-
-7. Dynamic Record Management:
+6. Dynamic Record Management:
 - The check-out system performs a targeted search through a list of dictionaries. Once a match is found, the program modifies the data structure in real-time and updates the external JSON file, simulating a live database update.
 ---------------------------------------------
 To run the simulator:
