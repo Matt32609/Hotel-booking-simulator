@@ -9,7 +9,7 @@ Key features of the code:
 1. Dictionary-Driven Room Selection:
 - I implemented a dictionary to map user inputs to specific room attributes (Room Name and Nightly Rate). This approach replaces long if-else chains with a cleaner, more scalable lookup system that manages everything from Standard rooms to the Penthouse.
 
-2.Date-Time Arithmetic for Billing:
+2. Date-Time Arithmetic for Billing:
 - Using Python’s datetime module, the program captures the current date and calculates the delta (difference) between check-in and check-out. This ensures the stay duration is calculated automatically, which then drives the total cost calculation without manual entry.
 
 3. Logical Room Number Allocation:
