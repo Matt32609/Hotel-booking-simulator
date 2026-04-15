@@ -92,7 +92,7 @@ def payment(chosen_room, room_price, date_str, stay_duration):
         else:
             room_number = random.randint(100, 980)  
         print(f"Room: {chosen_room}")
-        print(f"Nights: {stay_duration}")
+        print(f"Night(s): {stay_duration}")
         print(f"Total Amount: RM{total_cost}")
         print("(1) Yes | (2) No")
         payment_final = int(input("Would you like to proceed with this transaction? Please enter a digit either 1 or 2 to continue."))
