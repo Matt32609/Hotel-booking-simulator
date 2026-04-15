@@ -2,7 +2,7 @@
 --------------------------------------
 A command-line interface (CLI) application built in Python that simulates a professional hotel front-desk system. The project focuses on managing the guest lifecycle—from room selection and automated billing to persistent record-keeping.
 
-This simulator was developed to enhance my understanding of dictionaries, JSON for persistent data storage, and the use of functions. At the same time, the project introduced me to the "random" and "datetime" modules, which helped make the simulator more realistic.
+This simulator was developed to enhance my understanding of dictionaries, JSON for persistent data storage, and the use of functions such as a length function. At the same time, the project introduced me to the "random" and "datetime" modules, which helped make the simulator more realistic.
 
 ---------------------------------------
 Key features of the code:
@@ -24,6 +24,9 @@ Key features of the code:
   
 6. Dynamic Record Management:
 - The check-out system performs a targeted search through a list of dictionaries. Once a match is found, the program modifies the data structure in real time and updates the external JSON file, simulating a live database update.
+
+7. Infinite Loop Prevention (Safety Guard)
+- I designed a proactive check that validates room availability before entering the random allocation phase. By using list/array comprehension to filter active bookings and the "len()" function to audit current occupancy, the system can detect a "full house" state instantly. This critical safety logic ensures the program never enters an infinite while loop when a room tier is full, effectively preventing CPU spikes and application freezes while maintaining system stability.
 ---------------------------------------------
 To run the simulator:
 ---------------------------------------------
