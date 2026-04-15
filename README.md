@@ -27,8 +27,8 @@ Key features of the code:
 ---------------------------------------------
 To run the simulator:
 ---------------------------------------------
-- chmod +x hotel_booking_simulator.py (to gain permission to run this simulator)
-- ./hotel_booking_simulator.py (to run the simulator)
+- chmod +x hotel_booking_simulator.py 
+- ./hotel_booking_simulator.py 
 
 (ALTERNATIVE)
 - python3 hotel_booking_simulator.py | cat -e
