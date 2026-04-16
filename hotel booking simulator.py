@@ -62,8 +62,8 @@ def check_in():
                 print(f"Room: {chosen_room}")
                 print(f"Check-in:  {check_in_date.strftime('%Y-%m-%d')}")
                 print(f"Check-out: {check_out_date.strftime('%Y-%m-%d')}")
-                jdjd = int(input(f"Would you like to continue? Enter a digit either 1 or 2 to continue."))
                 print("(1) Yes | (2) No")
+                jdjd = int(input(f"Would you like to continue? Enter a digit either 1 or 2 to continue."))
                 if jdjd == 1:
                     print("You will be bought to the payment page.")
                     payment(chosen_room, room_price, date_str, stay_duration)
