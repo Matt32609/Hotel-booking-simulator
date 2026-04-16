@@ -121,7 +121,7 @@ def payment(chosen_room, room_price, date_str, stay_duration):
         payment_final = int(input("Would you like to proceed with this transaction? Please enter a digit either 1 or 2 to continue."))
         if payment_final == 1:
             all_bookings = load_from_json()
-            new_entry = {"room_number": room_number, "type": chosen_room, "date": date_str}
+            new_entry = {"room_number": room_number, "type": chosen_room, "date": date_str, "price": room_price}
             all_bookings.append(new_entry)
             
             save_to_json(all_bookings)
@@ -147,6 +147,15 @@ def check_out():
         
         if found_guest:
             print(f"Booking Found: {found_guest["type"]}")
+            today = datetime.datetime.now().date()
+            scheduled_date = datetime.datetime.strptime(found_guest["date"], "%Y-%m-%d").date()
+            
+            overstay_days = (today - scheduled_date).days
+            
+            if overstay_days > 0:
+                extra_charge = overstay_days * found_guest["price"]
+                print(f"NOTICE: You have overstayed by {overstay_days} day(s).")
+                print(f"Extra charges incurred: RM{extra_charge}")
             print("(1) Yes | (2) No")
             if int(input("Would you like to check out? ")) == 1:
                 all_bookings.remove(found_guest)
