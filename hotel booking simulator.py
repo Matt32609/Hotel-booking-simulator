@@ -26,9 +26,9 @@ def menu_selection():
         elif select == 3:
             exit()
         elif select == 4:
-            save_to_json([]) 
             print("Simulator fully reset")
-            return True
+            save_to_json([]) 
+            exit()
     except ValueError:
         print("Sorry , this was an invalid response . Please enter again.")
         return True
