@@ -127,7 +127,7 @@ def payment(chosen_room, room_price, date_str, stay_duration):
             save_to_json(all_bookings)
             
             print(f"Thank you for your payment! Your room number throughout the stay is {room_number}. Enjoy your stay!")
-            menu_selection()
+            exit()
         elif payment_final == 2:
             menu_selection()
     except ValueError:
@@ -152,6 +152,7 @@ def check_out():
                 all_bookings.remove(found_guest)
                 save_to_json(all_bookings)
                 print("We hope you enjoyed your stay! You are more than welcome to stay with us again.")
+                exit()
             else:
                 print("Check-out process cancelled.")
                 menu_selection()
@@ -164,13 +165,3 @@ def check_out():
 
 while True:
     menu_selection()
-
-
-
-
-
-
-
-        
-
-    
