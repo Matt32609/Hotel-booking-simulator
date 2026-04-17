@@ -136,7 +136,7 @@ def payment(chosen_room, room_price, date_str, stay_duration):
 
 def check_out():
     try:
-        room_input = int(input("Please enter your room number:"))
+        room_input = int(input("Please enter your room number (If you wish to return to the main menu , enter any number or letter once and you will be returned to the menu.) :"))
         all_bookings = load_from_json()
         
         found_guest = None
