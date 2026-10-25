@@ -1,4 +1,4 @@
-# Hotel-booking-simulator
+# Hotel-booking-simulator (LAST BRIDGING PROJECT BETWEEN PYTHON AND C BEFORE THE COMMENCEMENT OF MY DATA SCIENCE DEGREE)
 --------------------------------------
 A command-line interface (CLI) application built in Python that simulates a professional hotel front-desk system. The project focuses on managing the guest lifecycle—from room selection and automated billing to persistent record-keeping.
 
