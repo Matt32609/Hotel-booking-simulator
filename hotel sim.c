@@ -46,10 +46,10 @@ int menuselect(void)
 
         if (ms[0] == '\n')
             {printf("Invalid response.\n");
-            return 1;}
+            continue;}
         if (sscanf(ms,"%d", &input) != 1)
             {printf("Invalid response.\n");
-            return 1;}
+            continue;}
 
         if (input == 1)
             {checkin();}
