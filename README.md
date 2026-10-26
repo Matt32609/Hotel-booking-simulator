@@ -14,7 +14,7 @@ Key features of the code:
 - Using Python’s "datetime" module and C's <<time.h>> and struct feature for time such as (mktime) , the program captures the current date and calculates the delta (difference) between check-in and check-out. This ensures the stay duration is calculated automatically, which then drives the total cost calculation without manual entry.
 
 3. Logical Room Number Allocation:
-- To mirror a real-world hotel floor plan, I used "random.randint()" / "%(max - min + 1), min" within specific ranges. I wrote logic to ensure room numbers are tier-aware, assigning lower numbers to Standard rooms and reserving the 900-series exclusively for Penthouses.
+- To mirror a real-world hotel floor plan, I used "random.randint()" / "rand () %(max - min + 1) + min" within specific ranges. I wrote logic to ensure room numbers are tier-aware, assigning lower numbers to Standard rooms and reserving the 900-series exclusively for Penthouses.
 
 4. Persistent Data Storage via JSON:
 - I implemented a JSON-based database system to ensure data persistence. By using JSON, the simulator maintains guest records even after the program is closed, moving the project beyond a simple volatile script to a persistent application.
